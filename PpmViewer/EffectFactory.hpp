@@ -7,6 +7,7 @@
 #include "NegateBlueEffect.hpp"
 #include "GreyscaleEffect.hpp"
 #include "AddNoiseEffect.hpp"
+#include "HighContrastEffect.hpp"
 
 
 enum class ImageEffectType
@@ -18,7 +19,8 @@ enum class ImageEffectType
 	NegateGreen = 5,
 	NegateBlue = 6,
 	Greyscale = 7,
-	AddNoise = 8      //TODO: add rest below
+	AddNoise = 8,
+	HighContrast = 9     //TODO: add rest below
 };
 
 class EffectFactory
@@ -51,6 +53,9 @@ public:
 			break;
 		case ImageEffectType::AddNoise:
 			return new AddNoiseEffect{};
+			break;
+		case ImageEffectType::HighContrast:
+			return new HighContrastEffect{};
 			break;
 
 		default: 
