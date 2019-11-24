@@ -281,6 +281,7 @@
     <ClInclude Include="FL\platform.H" />
     <ClInclude Include="FL\win32.H" />
     <ClInclude Include="FL\x.H" />
+    <ClInclude Include="Greyscale.hpp" />
     <ClInclude Include="ImageEffect.hpp" />
     <ClInclude Include="NegateBlueEffect.hpp" />
     <ClInclude Include="NegateGreenEffect.hpp" />

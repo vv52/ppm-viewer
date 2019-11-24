@@ -503,6 +503,9 @@
     <ClInclude Include="RemoveGreenEffect.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Greyscale.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="bunny.ppm">
