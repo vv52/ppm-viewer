@@ -9,6 +9,7 @@
 #include "AddNoiseEffect.hpp"
 #include "HighContrastEffect.hpp"
 #include "FlipHorizontalEffect.hpp"
+#include "FlipVerticalEffect.hpp"
 
 
 enum class ImageEffectType
@@ -22,7 +23,8 @@ enum class ImageEffectType
 	Greyscale = 7,
 	AddNoise = 8,
 	HighContrast = 9,
-	FlipHorizontal = 10      //TODO: add rest below
+	FlipHorizontal = 10,
+	FlipVertical = 11   //TODO: add rest below
 };
 
 class EffectFactory
@@ -61,6 +63,9 @@ public:
 			break;
 		case ImageEffectType::FlipHorizontal:
 			return new FlipHorizontalEffect{};
+			break;
+		case ImageEffectType::FlipVertical:
+			return new FlipVerticalEffect{};
 			break;
 
 		default: 

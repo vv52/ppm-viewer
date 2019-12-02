@@ -137,6 +137,7 @@
     <ClInclude Include="FileBrowser.hpp" />
     <ClInclude Include="FileHelpers.hpp" />
     <ClInclude Include="FlipHorizontalEffect.hpp" />
+    <ClInclude Include="FlipVerticalEffect.hpp" />
     <ClInclude Include="FltkIncludes.h" />
     <ClInclude Include="FL\abi-version.h" />
     <ClInclude Include="FL\dirent.h" />
