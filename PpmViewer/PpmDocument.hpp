@@ -55,6 +55,20 @@ public:
 		open(file_name);
 	}
 
+	PpmDocument(string setF, int setW, int setH, int setCD)
+	{
+		_format = setF;
+		_width = setW;
+		_height = setH;
+		_color_depth = setCD;
+		_rgb_data.resize(setH);
+		
+		for (int i = 0; i < setH; i++)
+		{
+			_rgb_data[i].resize(setW);
+		}
+	}
+
 	//do nothing constructor for when we don't
 	//have a file name
 	PpmDocument()
@@ -165,6 +179,11 @@ public:
 		return _format;
 	}
 
+	vector<vector<Pixel>> getRGBData() const
+	{
+		return _rgb_data;
+	}
+
 	void setImageFormat(string format)
 	{
 		//error checking
@@ -175,6 +194,26 @@ public:
 		else
 		{
 			//TODO: throw error 
+		}
+	}
+
+	void setDuplicate(PpmDocument toDuplicate)
+	{
+		_format = toDuplicate.getImageFormat();
+		_width = toDuplicate.getWidth();
+		_height = toDuplicate.getHeight();
+		_color_depth = toDuplicate.getColorDepth();
+		_rgb_data = toDuplicate.getRGBData();
+		_raw_bytes = toDuplicate.getRawBytes();
+	}
+
+	void resizeRGB(int setW, int setH)
+	{
+		_rgb_data.resize(setH);
+
+		for (int i = 0; i < setH; i++)
+		{
+			_rgb_data[i].resize(setW);
 		}
 	}
 

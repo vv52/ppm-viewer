@@ -296,6 +296,7 @@
     <ClInclude Include="RemoveBlueEffect.hpp" />
     <ClInclude Include="RemoveGreenEffect.hpp" />
     <ClInclude Include="RemoveRedEffect.hpp" />
+    <ClInclude Include="RotateNinetyEffect.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="blocks.ppm" />

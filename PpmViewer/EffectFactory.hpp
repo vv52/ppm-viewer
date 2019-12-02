@@ -10,6 +10,7 @@
 #include "HighContrastEffect.hpp"
 #include "FlipHorizontalEffect.hpp"
 #include "FlipVerticalEffect.hpp"
+#include "RotateNinetyEffect.hpp"
 
 
 enum class ImageEffectType
@@ -24,7 +25,8 @@ enum class ImageEffectType
 	AddNoise = 8,
 	HighContrast = 9,
 	FlipHorizontal = 10,
-	FlipVertical = 11   //TODO: add rest below
+	FlipVertical = 11,
+	RotateNinety = 12         //TODO: add rest below
 };
 
 class EffectFactory
@@ -66,6 +68,9 @@ public:
 			break;
 		case ImageEffectType::FlipVertical:
 			return new FlipVerticalEffect{};
+			break;
+		case ImageEffectType::RotateNinety:
+			return new RotateNinetyEffect{};
 			break;
 
 		default: 
