@@ -44,29 +44,3 @@ public:
 		}
 	}
 };
-
-
-
-
-/*
-
-for (int i = 0; i < project.getPixelCount(); i++)
-	{
-		
-
-		int currentGreen = editedPixelData[i].getGreen();
-		if (currentGreen > 127) {
-			currentGreen = 255;
-		} else {
-			currentGreen = 0;
-		}
-
-		int currentBlue = editedPixelData[i].getBlue();
-		if (currentBlue > 127) {
-			currentBlue = 255;
-		} else {
-			currentBlue = 0;
-		}
-
-		editedPixelData[i].setRGB(currentRed, currentGreen, currentBlue);
-	}*/

@@ -136,6 +136,7 @@
     <ClInclude Include="EffectFactory.hpp" />
     <ClInclude Include="FileBrowser.hpp" />
     <ClInclude Include="FileHelpers.hpp" />
+    <ClInclude Include="FlipHorizontalEffect.hpp" />
     <ClInclude Include="FltkIncludes.h" />
     <ClInclude Include="FL\abi-version.h" />
     <ClInclude Include="FL\dirent.h" />
@@ -298,6 +299,7 @@
   <ItemGroup>
     <None Include="blocks.ppm" />
     <None Include="bunny.ppm" />
+    <None Include="ppme_splash.ppm" />
     <None Include="RGB.ppm" />
     <None Include="tinypix.ppm" />
   </ItemGroup>
