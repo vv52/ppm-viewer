@@ -15,7 +15,7 @@ public:
 				noiseValue = ((rand() % 21) - 10);
 				Pixel& p = doc[i][j];
 				
-				int redTemp = p.red;
+				int redTemp = p.getRed();
 				redTemp += noiseValue;
 				if (redTemp < 0) {
 					redTemp = 0;
@@ -23,9 +23,9 @@ public:
 				else if (redTemp > 255) {
 					redTemp = 255;
 				}
-				p.red = redTemp;
+				p.setRed(redTemp);
 
-				int greenTemp = p.green;
+				int greenTemp = p.getGreen();
 				greenTemp += noiseValue;
 				if (greenTemp < 0) {
 					greenTemp = 0;
@@ -33,9 +33,9 @@ public:
 				else if (greenTemp > 255) {
 					greenTemp = 255;
 				}
-				p.green = greenTemp;
+				p.setGreen(greenTemp);
 
-				int blueTemp = p.blue;
+				int blueTemp = p.getBlue();
 				blueTemp += noiseValue;
 				if (blueTemp < 0) {
 					blueTemp = 0;
@@ -43,7 +43,7 @@ public:
 				else if (blueTemp > 255) {
 					blueTemp = 255;
 				}
-				p.blue = blueTemp;
+				p.setBlue(blueTemp);
 
 				doc[i][j] = p;
 			}

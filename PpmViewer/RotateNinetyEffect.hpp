@@ -24,16 +24,3 @@ public:
 		doc.setDuplicate(rotated);
 	}
 };
-
-
-/*
-
-
-for (int m = project.getWidth() - 1; m >= 0; m--)
-{
-	for (int l = 0; l < project.getHeight(); l++)
-	{
-		dataYX_rotated[x][l] = dataYX[l][m];
-	}
-	x++;
-}*/

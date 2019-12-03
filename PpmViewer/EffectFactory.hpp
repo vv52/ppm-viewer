@@ -11,6 +11,7 @@
 #include "FlipHorizontalEffect.hpp"
 #include "FlipVerticalEffect.hpp"
 #include "RotateNinetyEffect.hpp"
+#include "BlurImageEffect.hpp"
 
 
 enum class ImageEffectType
@@ -26,7 +27,8 @@ enum class ImageEffectType
 	HighContrast = 9,
 	FlipHorizontal = 10,
 	FlipVertical = 11,
-	RotateNinety = 12         //TODO: add rest below
+	RotateNinety = 12,
+	BlurImage = 13          //TODO: add rest below
 };
 
 class EffectFactory
@@ -71,6 +73,9 @@ public:
 			break;
 		case ImageEffectType::RotateNinety:
 			return new RotateNinetyEffect{};
+			break;
+		case ImageEffectType::BlurImage:
+			return new BlurImageEffect{};
 			break;
 
 		default: 

@@ -11,8 +11,8 @@ public:
 			for (int j = 0; j < doc.getWidth(); j++)
 			{
 				Pixel& p = doc[i][j];
-				int redTemp = p.red;
-				p.red = (255 - redTemp);
+				int redTemp = p.getRed();
+				p.setRed(255 - redTemp);
 
 				doc[i][j] = p;
 			}

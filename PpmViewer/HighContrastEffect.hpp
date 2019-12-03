@@ -12,7 +12,7 @@ public:
 			{
 				Pixel& p = doc[i][j];
 
-				int tempRed = p.red;
+				int tempRed = p.getRed();
 				if (tempRed > 127) {
 					tempRed = 255;
 				}
@@ -20,7 +20,7 @@ public:
 					tempRed = 0;
 				}
 
-				int tempGreen = p.green;
+				int tempGreen = p.getGreen();
 				if (tempGreen > 127) {
 					tempGreen = 255;
 				}
@@ -28,7 +28,7 @@ public:
 					tempGreen = 0;
 				}
 
-				int tempBlue = p.blue;
+				int tempBlue = p.getBlue();
 				if (tempBlue > 127) {
 					tempBlue = 255;
 				}
@@ -36,9 +36,9 @@ public:
 					tempBlue = 0;
 				}
 				
-				p.red = tempRed;
-				p.green = tempGreen;
-				p.blue = tempBlue;
+				p.setRed(tempRed);
+				p.setGreen(tempGreen);
+				p.setBlue(tempBlue);
 				doc[i][j] = p;
 			}
 		}

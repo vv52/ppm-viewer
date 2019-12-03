@@ -133,6 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddNoiseEffect.hpp" />
+    <ClInclude Include="BlurImageEffect.hpp" />
     <ClInclude Include="EffectFactory.hpp" />
     <ClInclude Include="FileBrowser.hpp" />
     <ClInclude Include="FileHelpers.hpp" />
