@@ -12,6 +12,7 @@
 #include "FlipVerticalEffect.hpp"
 #include "RotateNinetyEffect.hpp"
 #include "BlurImageEffect.hpp"
+#include "PixelateEffect.hpp"
 
 
 enum class ImageEffectType
@@ -28,7 +29,8 @@ enum class ImageEffectType
 	FlipHorizontal = 10,
 	FlipVertical = 11,
 	RotateNinety = 12,
-	BlurImage = 13          //TODO: add rest below
+	BlurImage = 13,
+	Pixelate = 14     //TODO: add rest below
 };
 
 class EffectFactory
@@ -76,6 +78,9 @@ public:
 			break;
 		case ImageEffectType::BlurImage:
 			return new BlurImageEffect{};
+			break;
+		case ImageEffectType::Pixelate:
+			return new PixelateEffect{};
 			break;
 
 		default: 

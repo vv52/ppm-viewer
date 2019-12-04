@@ -292,6 +292,7 @@
     <ClInclude Include="NegateGreenEffect.hpp" />
     <ClInclude Include="NegateRedEffect.hpp" />
     <ClInclude Include="Pixel.hpp" />
+    <ClInclude Include="PixelateEffect.hpp" />
     <ClInclude Include="PpmDocument.hpp" />
     <ClInclude Include="PpmWindow.hpp" />
     <ClInclude Include="RemoveBlueEffect.hpp" />
